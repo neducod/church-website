@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import React from 'react';
 
-
-function HeroSection(){
+function ServiceTime(){
     return(
         <>
         </>
     )
 }
 
-export default HeroSection
+export default ServiceTime
