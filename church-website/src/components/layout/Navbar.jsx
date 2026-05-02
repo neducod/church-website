@@ -4,6 +4,7 @@ import { FaBeer } from 'react-icons/fa';
 // MENU FOR HAMBURGER
 import { LuMenu } from "react-icons/lu";
 
+
 function Navbar(){
     return(
         <>
