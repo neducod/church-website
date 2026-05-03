@@ -49,16 +49,16 @@ const data = [
 function Ministry(){
     return(
         <>
-            <div>
+            <div className='flex justify-center items-center flex-col gap-8 mt-48'>
                 {data.map((item) => (
                     <div 
                         key={item.id}
-                        className='w-40 bg-red-500'
+                        className='w-90 bg-slate-100 rounded-2xl shadow-2xs p-4 hover:shadow-2xl transition flex flex-row gap-4 '
                     >
                     <img
                         src={item.image}
                         alt={item.title}
-                        className='w-full'
+                        className='h-38 rounded-xl'
                     ></img>
                     <div>
                         <h2 className='text-black'>
