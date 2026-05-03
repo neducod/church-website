@@ -49,6 +49,28 @@ const data = [
 function Ministry(){
     return(
         <>
+            <div>
+                {data.map((item) => (
+                    <div 
+                        key={item.id}
+                        className='w-40 bg-red-500'
+                    >
+                    <img
+                        src={item.image}
+                        alt={item.title}
+                        className='w-full'
+                    ></img>
+                    <div>
+                        <h2 className='text-black'>
+                            {item.title}
+                        </h2>
+                        <p className='text-blac'>
+                            {item.description}
+                        </p>
+                    </div>
+                </div>
+                ))}
+            </div>
         </>
     )
 }
