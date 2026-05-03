@@ -6,7 +6,7 @@ import Footer from './components/layout/Footer'
 
 import HeroSection from './components/home/HeroSection'
 import ServiceTime from './components/home/ServiceTime'
-
+import Ministry from './components/home/Ministry'
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
       <NavBar/>
       <HeroSection/>
       <ServiceTime/>
+      <Ministry/>
       <Footer/>
     </>
   )

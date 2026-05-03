@@ -1,7 +1,9 @@
 import { useState } from 'react'
 
 import ImageOne from '../assets/church.jpeg'
-
+import ImageTwo from '../assets/chruch.jpeg'
+import ImageThree from '../assets/worship.jpeg'
+import ImageFour from '../assets/youngsmallgroup.jpeg'
 const data = [
     {
         id: 1,
@@ -9,28 +11,31 @@ const data = [
         subtitle: "Sunday Worship Service",
         description: "Sunday at 9:00AM",
         direction: "Praise Hill Auditiorim",
-        image: '../assets/church.jpeg'
+        image: ImageOne
     },
     {
         id: 2,
         title: "Card One",
         subtitle: "Midweek Service",
         description: "Wednesday at 5:00PM",
-        direction: "Praise Hill Auditiorim"
+        direction: "Praise Hill Auditiorim",
+        image: ImageTwo
     },
     {
         id: 3,
         title: "Card One",
         subtitle: "Youth Service",
         description: "Saturday at 4:00PM",
-        direction: "Praise Hill Auditiorim"
+        direction: "Praise Hill Auditiorim",
+        image: ImageThree
     },
     {
         id: 4,
         title: "Card One",
         subtitle: "Prayer Meeting",
         description: "Friday at 6:00PM",
-        direction: "Praise Hill Auditiorim"
+        direction: "Praise Hill Auditiorim",
+        image: ImageFour
     }
 ]
 
