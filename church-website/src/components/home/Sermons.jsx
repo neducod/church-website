@@ -7,8 +7,8 @@ import ThumbThree from '../assets/download.jpeg'
 const data = [
     {
         id: 1,
-        title: "Miracle Service",
-        name: "PAstor Bro",
+        title: "Sunday Prayer and Confession Sunday Service with Pastor Br...",
+        name: "Pastor John",
         image: ThumbOne,
         description: "Praise Hill",
         views: "213k",
@@ -16,18 +16,18 @@ const data = [
     },
     {
         id: 1,
-        title: "Miracle Service",
+        title: "Wednesday's Word and Bible Prayer Meeting with the Yo...",
         name: "PAstor Bro",
-        image: ThumbOne,
+        image: ThumbTwo,
         description: "Praise Hill",
         views: "302k",
         stream: "Streamed 7 hours ago"
-    },
+    }, 
     {
         id: 1,
-        title: "Miracle Service",
+        title: "Revive Sunday Live Service with the Gold Lake Church",
         name: "PAstor Bro",
-        image: ThumbOne,
+        image: ThumbThree,
         description: "Praise Hill",
         views: "51k",
         stream: "Streamed 2 days ago"
@@ -37,29 +37,31 @@ const data = [
 function Ministry(){
     return(
         <>
-        <div>
+        <div className='flex flex-col justify-center items-center mt-30 bg-black py-20 gap-14'>
             {data.map((item) => (
                 <div 
                     key={item.id}
-                    className='bg-slate-100'
+                    className='bg-black w-96 border border-solid'
                 >
-                <img
-                    src={item.image}
-                    alt={item.title}
-                    className='rounded-xl'
-                ></img>
                 <div>
-                    <h2 className='text-gray-500'>
+                    <img
+                        src={item.image}
+                        alt={item.title}
+                        className='rounded-xl w-full'
+                    ></img>
+                </div>
+                <div className='#'>
+                    <h2 className='text-white text-2xl'>
                         {item.title}
                     </h2>
-                    <p className='text-gray-500'>
+                    <p className='text-white text-base'>
                         {item.description}
                     </p>
-                    <div>
-                        <p>
+                    <div className='flex gap-2'>
+                        <p className='text-base text-white'>
                             {item.views}
                         </p>
-                        <p>
+                        <p className='text-base text-white'>
                             {item.stream}
                         </p>
                     </div>
@@ -70,5 +72,5 @@ function Ministry(){
         </>
     )
 }
-    
+//*939*33#  // 
 export default Ministry
