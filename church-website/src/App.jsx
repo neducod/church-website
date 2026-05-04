@@ -8,6 +8,7 @@ import HeroSection from './components/home/HeroSection'
 import ServiceTime from './components/home/ServiceTime'
 import Ministry from './components/home/Ministry'
 import Sermons from './components/home/Sermons'
+import Cta from './components/home/Cta'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <ServiceTime/>
       <Ministry/>
       <Sermons />
+      <Cta/>
       <Footer/>
     </>
   )
