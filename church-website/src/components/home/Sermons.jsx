@@ -54,14 +54,14 @@ function Ministry(){
                     <h2 className='text-white text-2xl'>
                         {item.title}
                     </h2>
-                    <p className='text-white text-base'>
+                    <p className='text-gray-300 text-base'>
                         {item.description}
                     </p>
                     <div className='flex gap-2'>
-                        <p className='text-base text-white'>
+                        <p className='text-base text-gray-300'>
                             {item.views}
                         </p>
-                        <p className='text-base text-white'>
+                        <p className='text-base text-gray-300'>
                             {item.stream}
                         </p>
                     </div>
