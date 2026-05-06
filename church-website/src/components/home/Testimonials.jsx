@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+import { GrPrevious } from "react-icons/gr";
+// import { GrFormNext } from "react-icons/gr";
+import { GrNext } from "react-icons/gr";
+
 const testimonials = [
     { 
         name: "John Kennedy",
@@ -43,16 +47,19 @@ export default function TestimonialSlider() {
       );
     };
 return(
-    <div className="max-w-xl mx-auto text-center p-6 shadow-lg rounded-2xl">
-  <p className="text-lg italic mb-4">
+    <div className="max-w-xl mx-auto text-center p-8 shadow-lg rounded-2xl">
+        <div>
+            <h1 className="text-2xl p-4">What marvellous thing has the Lord done in your life</h1>
+        </div>
+  <p className="text-lg italic mb-4 bg-[#954535] text-white p-4 border-double border-pink-700">
     "{testimonials[index].text}"
   </p>
   <h4 className="font-bold">{testimonials[index].name}</h4>
   <p className="text-pink-600">{testimonials[index].title}</p>
 
   <div className="flex justify-center gap-4 mt-4">
-    <button onClick={prevSlide}>Prev</button>
-    <button onClick={nextSlide}>Next</button>
+    <button onClick={prevSlide}><GrPrevious /></button>
+    <button onClick={nextSlide}><GrNext /></button>
   </div>
 </div>
     );
