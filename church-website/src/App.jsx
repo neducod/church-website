@@ -10,6 +10,7 @@ import Ministry from './components/home/Ministry'
 import Sermons from './components/home/Sermons'
 import Cta from './components/home/Cta'
 import TestimonialSlider from './components/home/Testimonials'
+import AboutPreview from './components/home/About'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <NavBar/>
       <HeroSection/>
+      <AboutPreview/>
       <ServiceTime/>
       <Ministry/>
       <Sermons />
