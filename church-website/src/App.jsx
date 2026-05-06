@@ -9,6 +9,7 @@ import ServiceTime from './components/home/ServiceTime'
 import Ministry from './components/home/Ministry'
 import Sermons from './components/home/Sermons'
 import Cta from './components/home/Cta'
+import TestimonialSlider from './components/home/Testimonials'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <ServiceTime/>
       <Ministry/>
       <Sermons />
+      <TestimonialSlider/>
       <Cta/>
       <Footer/>
     </>
