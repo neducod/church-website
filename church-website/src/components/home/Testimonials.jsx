@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 import { GrPrevious } from "react-icons/gr";
-// import { GrFormNext } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 
 const testimonials = [
@@ -47,20 +46,63 @@ export default function TestimonialSlider() {
       );
     };
 return(
-    <div className="max-w-xl mx-auto text-center p-8 shadow-lg rounded-2xl">
+    <>
+    <div className="hidden sm:block">
         <div>
-            <h1 className="text-2xl p-4">What marvellous thing has the Lord done in your life</h1>
+            <p>What are people saying about the goodness of God</p>
         </div>
-  <p className="text-lg italic mb-4 bg-[#954535] text-white p-4 border-double border-pink-700">
-    "{testimonials[index].text}"
-  </p>
-  <h4 className="font-bold">{testimonials[index].name}</h4>
-  <p className="text-pink-600">{testimonials[index].title}</p>
-
-  <div className="flex justify-center gap-4 mt-4">
-    <button onClick={prevSlide}><GrPrevious /></button>
-    <button onClick={nextSlide}><GrNext /></button>
-  </div>
-</div>
-    );
-    }
+        <h1 className="text-2xl p-4">What marvellous thing has the Lord done in your life.</h1>
+        <div>
+            <div className="bg-pink-500">
+                <div></div>
+                <div>
+                    <h3>John Kennedy</h3>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> 
+    </div>
+    
+    <div className="max-w-xl mx-auto text-center p-8 shadow-lg rounded-2xl sm:hidden">
+        {/* <div>
+            <h1 className="text-2xl p-4">What marvellous thing has the Lord done in your life.</h1>
+            <div className="bg-pink-500">
+                <div></div>
+                <div>
+                    <h3>John Kennedy</h3>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div> */}
+        <p className="text-lg italic mb-4 bg-[#954535] text-white p-4 border-double border-pink-700">
+            "{testimonials[index].text}"
+        </p>
+        <h4 className="font-bold">{testimonials[index].name}</h4>
+        <p className="text-pink-600">{testimonials[index].title}</p>
+        <div className="flex justify-center gap-4 mt-4">
+            <button onClick={prevSlide}><GrPrevious /></button>
+            <button onClick={nextSlide}><GrNext /></button>
+        </div>
+    </div>
+    </>
+);}
