@@ -92,11 +92,10 @@ function Footer(){
  
  
                 <div className='h-[3px] bg-green-400 w-full'></div>
-                <div className='flex flex-col gap-8'>
+                <div className='flex flex-col sm:justify-center sm:items-center sm:flex-row gap-8'>
                     <div>
-                        <p className='text-[#a1a1a2] text-lg'>@2026 Praise Hill. All rights reserved</p>
+                        <p className='text-[#a1a1a2] text-lg sm:text-sm'>@2026 Praise Hill. All rights reserved</p>
                     </div>
-                    {/* <div className='h-[3px] bg-green-400 w-full'></div> */}
                     <div className='flex justify-center items-center p-4'>
                         <p className='text-[#a1a1a2] text-sm'>Designed and inspired by <a href="https://my-portfolio-jade-seven-80.vercel.app/">Josephine</a> </p>
                     </div>
