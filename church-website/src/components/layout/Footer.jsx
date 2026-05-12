@@ -23,12 +23,12 @@ import { MdOutlineEmail } from "react-icons/md";
 function Footer(){
     return(
         <>
-            <footer className='mt-80 bg-[#141516] flex flex-col gap-10 p-6'>
-                <div className='sm:p-6 sm:flex sm:gap-26 sm:flex-row'>
+            <footer className='mt-10 bg-[#141516] flex flex-col gap-10 p-6'>
+                <div className='lg:p-6 lg:flex lg:gap-24 lg:flex-row'>
                     <div className='flex gap-2 flex-col'>
                         <LuChurch color='white' size='2rem' />
                         <h6 className='text-[#a1a1a2] font-bold text-xl'>PRAISE HILL.</h6>
-                        <p className='text-[#a1a1a2] text-lg sm:w-80'>Raising lives, building faith, transforming destinies through Christ.</p>
+                        <p className='text-[#a1a1a2] text-lg break-all'>Raising lives, building faith, transforming destinies through Christ.</p>
                         <div className='flex flex-row gap-4'>
                             <FaFacebook color='white' size='2rem' />
                             <LuYoutube color='white' size='2rem' />
@@ -37,7 +37,7 @@ function Footer(){
                         </div>
                     </div>
 
-                    <div className='sm:flex sm:flex-row sm:gap-16 sm:justify-center'>
+                    <div className='lg:flex lg:flex-row lg:gap-16 lg:justify-center'>
                         <div>
                             <ul className='flex flex-col'>
                                 <li className='text-[#a1a1a2] text-lg'>Home</li>
@@ -70,7 +70,11 @@ function Footer(){
                             </div>
                         </div>
 
-                        <div className='flex flex-col gap-6 mt-8 sm:mt-0'>
+
+                    </div>
+                </div>
+
+{/*                         <div className='flex flex-col gap-6 mt-8 sm:mt-0'>
                             <div className='flex flex-row gap-2'>
                                 < IoLocationOutline color='white' size='2rem' />
                                 <p className='text-[#a1a1a2] text-lg'>12 Corner Road</p>
@@ -83,12 +87,7 @@ function Footer(){
                                 <MdOutlineEmail color='white' size='2rem'/>
                                 <p className='text-[#a1a1a2] text-lg'>sendyourprayers@gmail.com</p>
                             </div>
-                            {/* MINI GOOGLE MAP */}
-                        </div>
-                    </div>
-                </div>
-
-
+                        </div> */}
  
  
                 <div className='h-[3px] bg-green-400 w-full'></div>
