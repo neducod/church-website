@@ -49,7 +49,7 @@ const data = [
 function Ministry(){
     return(
         <>
-            <div className='flex justify-center items-center flex-col gap-8 mt-48'>
+            <div className='flex justify-center items-center flex-col gap-8 mt-40 md:flex-row md:flex-wrap md:gap-16'>
                 {data.map((item) => (
                     <div 
                         key={item.id}

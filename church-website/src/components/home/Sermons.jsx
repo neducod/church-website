@@ -37,7 +37,8 @@ const data = [
 function Ministry(){
     return(
         <>
-        <div className='flex flex-col justify-center items-center mt-30 bg-black py-20 gap-14'>
+        <div className='flex flex-col justify-center items-center mt-30 bg-black py-20 gap-14 md:flex-row-reverse md:flex-wrap'>
+            {/* A SWIPER FEATURE WOULD BE FIRE HERE */}
             {data.map((item) => (
                 <div 
                     key={item.id}
