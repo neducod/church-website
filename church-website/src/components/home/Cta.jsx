@@ -12,7 +12,7 @@ function Cta(){
                     <FaCross size='2rem' />
                     <BiChurch size='2.5rem' />
                 </div>
-                <div className='flex gap-2 flex-col justify-center'>
+                <div className='flex gap-2 flex-col justify-center md:pl-8'>
                     <h2 className='text-3xl text-[#141516]'>SUPPORT THE WORK OF GOD </h2>
                     <p className='text-3xl font-extralight text-black p-2 italic'>Join us in serving God's coummunity.</p>
                 </div>
