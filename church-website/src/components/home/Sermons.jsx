@@ -73,5 +73,5 @@ function Ministry(){
         </>
     )
 }
-//*939*33#  // 
+//*939*33# {/* A SWIPER FEATURE WOULD BE FIRE HERE */} // 
 export default Ministry

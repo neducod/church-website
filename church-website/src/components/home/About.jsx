@@ -7,11 +7,11 @@ const AboutPreview = () => {
         
         {/* Left Side: Introduction */}
         <div className="space-y-6">
-          <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-600 font-semibold text-sm uppercase tracking-wide">
+          <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-lime-400 font-semibold text-sm uppercase tracking-wide">
             Welcome to Our Family
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-            A place where faith meets <span className="text-blue-600">purpose.</span>
+            A place where faith meets <span className="text-lime-400">purpose.</span>
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
             We are a vibrant community dedicated to authentic worship and radical grace. 
@@ -44,7 +44,7 @@ const AboutPreview = () => {
         <div className="grid grid-cols-1 gap-6">
           {/* Mission Card */}
           <div className="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:shadow-xl transition-shadow duration-300">
-            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4 text-white">
+            <div className="w-12 h-12 bg-lime-600 rounded-lg flex items-center justify-center mb-4 text-white">
               {/* Inline SVG Target */}
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
