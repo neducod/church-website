@@ -24,7 +24,6 @@ function Cta(){
                     <BiChurch size='2.5rem'/>
                     <FaBookBible size='2rem'/>
                 </div>
-                {/* <button className='cursor-pointer flex items-center fill-lime-400 bg-lime-950 hover:bg-lime-900 active:border active:border-lime-400 rounded-md duration-100 p-4 text-white'>Give Now</button> */}
             </div>
         </>
     )
