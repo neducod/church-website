@@ -51,17 +51,19 @@ function Ministry(){
         <>
             <div className='flex justify-center items-center flex-col gap-8 mt-40 sm:flex-row sm:flex-wrap md:flex-row md:flex-wrap md:gap-16'>
                 {/* NEW COMPLETE STYLING FOR IPAD MINI */}
-                <div className='max-w-2xl flex flex-col justify-center items-center'>
+                <div className='max-w-2xl flex flex-col justify-center items-center p-6'>
                     <h2 className='text-lg'>OUR COMMUNITY</h2>
                     <p>Ministries For Every Generation</p>
-                    <p className='text-center'>Find a community where you can grow spiritually,
-serve others, and build meaningful relationships.</p>
+                    <p className='text-center'>Find a community where you can grow spiritually, serve others, and build meaningful relationships.</p>
                 </div>
-                <div className='flex justify-center items-center flex-col gap-8 sm:flex-row sm:flex-wrap md:flex-row md:flex-wrap md:gap-16 p-6'>
+
+                <div className='flex justify-center items-center flex-col gap-8 sm:flex-row sm:flex-wrap md:gap-16 p-6'>
+                    {/* flex justify-center items-center flex-col gap-8 sm:flex-row sm:flex-wrap md:flex-row md:flex-wrap md:gap-16 p-6 */}
                     {data.map((item) => (
                         <div 
                             key={item.id}
-                            className='bg-slate-100 rounded-2xl shadow-2xs p-4 hover:shadow-2xl transition flex flex-row gap-4 max-w-2xl '
+                            className='bg-slate-100 rounded-2xl shadow-2xs p-4 hover:shadow-2xl transition flex flex-row gap-4 w-full md:max-w-[400px] flex-grow'
+                            // bg-slate-100 rounded-2xl shadow-2xs p-4 hover:shadow-2xl transition flex flex-row gap-4 max-w-160 flex-1
                         >
                         <img
                             src={item.image}
