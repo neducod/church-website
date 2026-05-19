@@ -37,38 +37,44 @@ const data = [
 function Ministry(){
     return(
         <>
-        <div className='flex flex-col justify-center items-center mt-30 bg-black py-20 gap-14 md:flex-row-reverse md:flex-wrap'>
-            {/* A SWIPER FEATURE WOULD BE FIRE HERE */}
-            {data.map((item) => (
-                <div 
-                    key={item.id}
-                    className='bg-black w-96 border border-solid'
-                >
-                <div>
-                    <img
-                        src={item.image}
-                        alt={item.title}
-                        className='rounded-xl w-full'
-                    ></img>
-                </div>
-                <div className='#'>
-                    <h2 className='text-white text-2xl'>
-                        {item.title}
-                    </h2>
-                    <p className='text-gray-300 text-base'>
-                        {item.description}
-                    </p>
-                    <div className='flex gap-2'>
-                        <p className='text-base text-gray-300'>
-                            {item.views}
+        <div className="bg-black py-20 px-6 lg:px-12">
+            <div className="max-w-7xl mx-auto mb-10">
+                <h2 className="text-white text-3xl font-bold">Latest Sermons</h2>
+            </div>
+            <div className='flex flex-col justify-center items-center mt-4 bg-black py-20 gap-14 md:flex-row-reverse md:flex-wrap'>
+                {/* A SWIPER FEATURE WOULD BE FIRE HERE */}
+                {data.map((item) => (
+                    <div 
+                        key={item.id}
+                        className='bg-black w-full max-w-96 flex-1 border border-solid'
+                        // bg-black w-96 border border-solid
+                    >
+                    <div>
+                        <img
+                            src={item.image}
+                            alt={item.title}
+                            className='rounded-xl w-full'
+                        ></img>
+                    </div>
+                    <div className='#'>
+                        <h2 className='text-white text-2xl'>
+                            {item.title}
+                        </h2>
+                        <p className='text-gray-300 text-base'>
+                            {item.description}
                         </p>
-                        <p className='text-base text-gray-300'>
-                            {item.stream}
-                        </p>
+                        <div className='flex gap-2'>
+                            <p className='text-base text-gray-300'>
+                                {item.views}
+                            </p>
+                            <p className='text-base text-gray-300'>
+                                {item.stream}
+                            </p>
+                        </div>
                     </div>
                 </div>
+                ))}
             </div>
-            ))}
         </div>
         </>
     )
