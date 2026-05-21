@@ -107,26 +107,7 @@ return(
           background-color: #3b82f6 !important; /* Matches Tailwind blue-500 */
         }
       `}</style>
-
-      
-            <div className="bg-pink-500">
-                <div></div>
-                <div>
-                    <h3>John Kennedy</h3>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div> 
+        </div>
     </div>
     
     <div className="max-w-xl mx-auto text-center p-8 shadow-lg rounded-2xl sm:hidden">

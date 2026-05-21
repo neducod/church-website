@@ -4,6 +4,8 @@ import ImageOne from '../assets/church.jpeg'
 import ImageTwo from '../assets/chruch.jpeg'
 import ImageThree from '../assets/worship.jpeg'
 import ImageFour from '../assets/youngsmallgroup.jpeg'
+
+
 const data = [
     {
         id: 1,
@@ -43,14 +45,6 @@ const data = [
 function ServiceTime(){
     return(
         <>
-        {/* <div className='bg-white border border-slate-200 grid grid-cols-6 gap-2 rounded-xl p-2 text-sm'>
-            <h1 className='text-center text-slate-200 text-xl font-bold col-span-6'>Our Service Time</h1>
-            <div className='bg-white border border-slate-200 grid grid-cols-6 gap-2 rounded-xl p-2 text-sm'>
-                
-            </div>
-            <div className='bg-slate-100 text-slate-600 h-28 placeholder:text-slate-600 placeholder:opacity-50 border border-slate-200 col-span-6 resize-none outline-none rounded-lg p-2 duration-300 focus:border-slate-600'></div>
-        </div> */}
-
 
         <div className="flex flex-wrap gap-8 justify-center items-center mt-30">
             {data.map((item) => (
@@ -63,9 +57,6 @@ function ServiceTime(){
                     alt={item.title}
                     className='w-full h-40 object-cover rounded-xl'
                 ></img>
-                {/* <h2 className="text-xl font-bold mt-3">
-                    {item.title}
-                </h2> */}
 
                 <h4 className="text-gray-500 text-sm">
                     {item.subtitle}
