@@ -3,6 +3,15 @@ import { useState, useEffect } from "react";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
 const testimonials = [
     { 
         name: "John Kennedy",
@@ -47,12 +56,59 @@ export default function TestimonialSlider() {
     };
 return(
     <>
-    <div className="hidden sm:block">
+    <div className="hidden sm:block  w-full max-w-6xl mx-auto px-4 py-16">
         <div>
-            <p>What are people saying about the goodness of God</p>
+            <p className="text-3xl font-bold text-center mb-12 text-slate-800">What are people saying about the goodness of God</p>
         </div>
-        <h1 className="text-2xl p-4">What marvellous thing has the Lord done in your life.</h1>
+        {/* <h1 className="text-2xl p-4">What marvellous thing has the Lord done in your life.</h1> */}
         <div>
+        <Swiper
+        modules={[Pagination, Autoplay]}
+        spaceBetween={24}
+        slidesPerView={1}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        pagination={{ 
+          clickable: true,
+          dynamicBullets: true 
+        }}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="!pb-14" // Extra padding for pagination bullets
+      >
+        {testimonials.map((item) => (
+          <SwiperSlide key={item.id} className="h-auto">
+            <div className="flex flex-col h-full bg-white border border-slate-200 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+              {/* Quote Icon */}
+              <div className="text-blue-500 mb-4">
+                <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32">
+                  <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H7.1c.5-1.7 2-3 3.9-3V8zm12 0c-3.3 0-6 2.7-6 6v10h10V14h-6.9c.5-1.7 2-3 3.9-3V8z" />
+                </svg>
+              </div>
+
+              {/* Testimonial Text */}
+              <p className="text-slate-600 leading-relaxed mb-6 italic flex-grow">
+                "{item.text}"
+              </p>
+
+              {/* Author Info */}
+              <div className="border-t border-slate-100 pt-4">
+                <h4 className="font-bold text-slate-900">{item.name}</h4>
+                <p className="text-sm text-slate-500 font-medium">{item.role}</p>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <style jsx global>{`
+        .swiper-pagination-bullet-active {
+          background-color: #3b82f6 !important; /* Matches Tailwind blue-500 */
+        }
+      `}</style>
+
+      
             <div className="bg-pink-500">
                 <div></div>
                 <div>
