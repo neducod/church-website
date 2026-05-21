@@ -74,26 +74,6 @@ return(
     </div>
     
     <div className="max-w-xl mx-auto text-center p-8 shadow-lg rounded-2xl sm:hidden">
-        {/* <div>
-            <h1 className="text-2xl p-4">What marvellous thing has the Lord done in your life.</h1>
-            <div className="bg-pink-500">
-                <div></div>
-                <div>
-                    <h3>John Kennedy</h3>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div> */}
         <p className="text-lg italic mb-4 bg-[#954535] text-white p-4 border-double border-pink-700">
             "{testimonials[index].text}"
         </p>
